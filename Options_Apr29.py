@@ -5,7 +5,7 @@ import datetime
 
 Apr29 = pd.read_csv('unusual_options_29apr.csv')
 
-Ticker = 'IWM'
+Ticker = 'SPY'
 
 Apr29['Price'] = Apr29.Volume * Apr29.Midpoint
 Apr29 = Apr29.sort_values('Price', axis=0, ascending=False)
